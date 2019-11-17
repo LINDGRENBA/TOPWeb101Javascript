@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Function Practice</title>
+  </head>
+  <body>
+
+    <script>
+
+//Write a function called add7 that takes one number and returns that number + 7.
+
+    function add7(num) {
+      let result = num + 7;
+      console.log(result);
+    }
+
+    add7(7); //result is 14
+
+
+//Write a function called multiply that takes 2 numbers and returns their product.
+
+    let multiply = (num1, num2) => num1 * num2;
+    multiply(3, 3); //result is 9
+
+
+  /*Write a function called capitalize that takes a string and returns that string with only the
+  first letter capitalized. Make sure that it can take strings that are lowercase, UPPERCASE or BoTh.*/
+
+    function capitalize(greeting) {
+      let string = greeting.charAt(0).toUpperCase() + greeting.slice(1);
+      console.log(string);
+    }
+
+    capitalize('hello'); //result is 'Hello'
+
+
+  /* Write a function called lastLetter that takes a string and returns the very last letter of that string: lastLetter("abcd") should return "d" */
+
+
+    function lastLetter(str) {
+      let getLastLetter = str.charAt(str.length-1);
+      console.log(getLastLetter);
+    }
+
+    lastLetter('I did it!'); //result is ! 
+
+    </script>
+
+  </body>
+</html>
